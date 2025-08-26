@@ -66,7 +66,7 @@ const translations = {
     english_native: "English — native",
 
     education: "Education",
-    uni_line: "B.Sc. in Information Systems — 7th semester • GPA 82%",
+    uni_line: "Computer Science — 7th semester • GPA 82%",
     school_line: "High School Diploma • Graduated 2018",
 
     skills: "Skills",
