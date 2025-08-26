@@ -9,11 +9,19 @@
 </head>
 <body>
   <div class="wrap">
+    <!-- Language selector -->
+    <div style="text-align:right;margin-bottom:10px">
+      <select id="langSwitcher" aria-label="Language selector">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+
     <header>
       <div>
         <h1>Luis Sanguinetti</h1>
-        <div class="role">Software Developer</div>
-        <p class="tagline">ML • Data • Full-Stack (.NET, Angular, C++, Python, SQL)</p>
+        <div class="role" data-i18n="role">Software Developer</div>
+        <p class="tagline" data-i18n="tagline">ML • Data • Full-Stack (.NET, Angular, C++, Python, SQL)</p>
       </div>
       <div class="contact">
         <div><a href="mailto:luis.eduardo.sanguinetti@gmail.com">luis.eduardo.sanguinetti@gmail.com</a></div>
@@ -26,21 +34,21 @@
       <!-- Left column -->
       <div class="col">
         <section>
-          <h2>Idiomas</h2>
-          <div class="chip">Español — nativo</div>
-          <div class="chip">Inglés — nativo</div>
+          <h2 data-i18n="languages">Idiomas</h2>
+          <div class="chip" data-i18n="spanish_native">Español — nativo</div>
+          <div class="chip" data-i18n="english_native">Inglés — nativo</div>
         </section>
 
         <section>
-          <h2>Educación</h2>
+          <h2 data-i18n="education">Educación</h2>
           <h3>Universidad ORT Uruguay</h3>
-          <div class="muted">Licenciatura en Sistemas — 7.º semestre • Promedio 82%</div>
+          <div class="muted" data-i18n="uni_line">Licenciatura en Sistemas — 7.º semestre • Promedio 82%</div>
           <h3 style="margin-top:.75rem">The British Schools</h3>
-          <div class="muted">Bachillerato • Graduado 2018</div>
+          <div class="muted" data-i18n="school_line">Bachillerato • Graduado 2018</div>
         </section>
 
         <section>
-          <h2>Habilidades</h2>
+          <h2 data-i18n="skills">Habilidades</h2>
           <div>
             <span class="chip">C++</span>
             <span class="chip">Python</span>
@@ -49,19 +57,19 @@
             <span class="chip">SQL</span>
             <span class="chip">.NET</span>
             <span class="chip">Angular</span>
-            <span class="chip">Data Warehousing</span>
-            <span class="chip">Machine Learning</span>
-            <span class="chip">Limpieza de datos</span>
-            <span class="chip">Requerimientos & Épicas</span>
+            <span class="chip" data-i18n="dw">Data Warehousing</span>
+            <span class="chip" data-i18n="ml">Machine Learning</span>
+            <span class="chip" data-i18n="data_cleaning">Limpieza de datos</span>
+            <span class="chip" data-i18n="req_epics">Requerimientos & Épicas</span>
           </div>
         </section>
 
         <section>
-          <h2>Perfiles</h2>
+          <h2 data-i18n="profiles">Perfiles</h2>
           <div class="links">
-            <a href="https://github.com/LuisSanguinetti">GitHub: LuisSanguinetti</a>
-            <a href="https://leetcode.com/u/luchosangui20/">LeetCode: luchosangui20</a>
-            <a href="https://www.kaggle.com/luisesanguinetti">Kaggle: Luis Sanguinetti</a>
+            <a href="https://github.com/LuisSanguinetti" data-i18n="github_label">GitHub: LuisSanguinetti</a>
+            <a href="https://leetcode.com/u/luchosangui20/" data-i18n="leetcode_label">LeetCode: luchosangui20</a>
+            <a href="https://www.kaggle.com/luisesanguinetti" data-i18n="kaggle_label">Kaggle: Luis Sanguinetti</a>
           </div>
         </section>
       </div>
@@ -69,8 +77,8 @@
       <!-- Right column -->
       <div class="col">
         <section>
-          <h2>Resumen</h2>
-          <p>
+          <h2 data-i18n="summary_title">Resumen</h2>
+          <p data-i18n="summary_text">
             Desarrollo full-stack y ciencia de datos: experiencia con Angular y .NET, C++ y Python;
             diseño de requerimientos y épicas; preparación y modelado de datos para data warehouses
             y proyectos de machine learning (Random Forest, Redes Neuronales, etc.).
@@ -78,24 +86,39 @@
         </section>
 
         <section>
-          <h2>Proyectos Destacados</h2>
-          <h3>Carro autónomo con Arduino</h3>
+          <h2 data-i18n="projects_title">Proyectos Destacados</h2>
+
+          <h3 data-i18n="p1_title">Carro autónomo con Arduino</h3>
           <ul>
-            <li><a href="https://github.com/LuisSanguinetti/ArduinoBluetoothCar">Control Bluetooth y piloto automático; procesamiento básico de señales para navegación. utilizacion de reinforcement learning.</a></li>
+            <li>
+              <a href="https://github.com/LuisSanguinetti/ArduinoBluetoothCar" data-i18n="p1_desc">
+                Control Bluetooth y piloto automático; procesamiento básico de señales para navegación. Utilización de reinforcement learning.
+              </a>
+            </li>
           </ul>
 
-          <h3>ML de Sentimiento en Reseñas</h3>
+          <h3 data-i18n="p2_title">ML de Sentimiento en Reseñas</h3>
           <ul>
-            <li><a href="https://colab.research.google.com/drive/1AvywXfzZ-GPmHQZ657NVzR6faZUd5ygN?usp=sharing">Pipeline de limpieza y features; modelos como Random Forest y redes neuronales para clasificar positividad.</a></li>
+            <li>
+              <a href="https://colab.research.google.com/drive/1AvywXfzZ-GPmHQZ657NVzR6faZUd5ygN?usp=sharing" data-i18n="p2_desc">
+                Pipeline de limpieza y features; modelos como Random Forest y redes neuronales para clasificar positividad.
+              </a>
+            </li>
           </ul>
 
           <h3>DeviceProject (Full-stack)</h3>
           <ul>
-            <li><a href="https://github.com/luchosangui/DeviceProject">Stack con TypeScript/Angular y backend .NET/SQL; prácticas de ingeniería de requerimientos.</a></li>
+            <li>
+              <a href="https://github.com/luchosangui/DeviceProject" data-i18n="p3_desc">
+                Stack con TypeScript/Angular y backend .NET/SQL; prácticas de ingeniería de requerimientos.
+              </a>
+            </li>
           </ul>
         </section>
       </div>
     </div>
   </div>
+
+  <script src="lang.js"></script>
 </body>
 </html>
